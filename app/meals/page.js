@@ -9,13 +9,9 @@ import MealsLoadingPage from '@/components/loading-meals/loading';
 async function MealsData() {
     const meals = await getMeals();
     return <MealsGrid meals={meals} />
-
 }
 
-
 export default function MealsPage() {
-
-
     return (
         <>
             <header className={styles.header}>
